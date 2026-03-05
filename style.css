@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  body{
+    background:#12001f;
+    overflow:hidden;
+    height:100vh;
+  }
+  
+/* Particle canvas */
+canvas{
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:-1;
+}
+
+/* Main card */
+.container{
+    width:90%;
+    max-width:300px;
+    background:rgba(60,0,90,0.35);
+    backdrop-filter: blur(10px);
+    padding:16px;
+    border-radius:12px;
+    margin:auto;
+    margin-top:40px;
+    box-shadow:0 0 18px #7a00ff;
+    color:white;
+}
+
+/* Title */
+h1{
+    text-align:center;
+    margin-bottom:12px;
+    color:#d5b3ff;
+    font-size:20px;
+}
+
+/* Input row */
+.input-box{
+    display:flex;
+    gap:6px;
+}
+
+.input-box input{
+    flex:1;
+    padding:8px;
+    border-radius:8px;
+    border:none;
+    outline:none;
+    background:#24003a;
+    color:white;
+    font-size:14px;
+}
+
+.input-box input::placeholder{
+    color:#bda4ff;
+}
+
+/* Show / Hide button */
+.input-box button{
+    padding:8px 12px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    background:#7a00ff;
+    color:white;
+    font-size:13px;
+}
+
+/* Strength section */
+.strength{
+    margin-top:10px;
+    font-size:13px;
+}
+
+/* Strength bar background */
+.bar{
+    width:100%;
+    height:6px;
+    background:#2c0047;
+    border-radius:6px;
+    overflow:hidden;
+    margin:6px 0;
+}
+
+/* Actual bar */
+#strengthBar{
+    height:100%;
+    width:0%;
+    background:#ff004c;
+    transition:0.3s;
+}
+
+/* Strength text */
+#strengthText{
+    font-size:12px;
+}
+
+/* Rules list */
+.rules{
+    margin-top:10px;
+    font-size:12px;
+    list-style:none;
+}
+
+.rules li{
+    margin:4px 0;
+    color:#ff9cff;
+}
+
+/* Valid rule */
+.valid{
+    color:#00ffae !important;
+}
+.feedback-section{
+    width: 80%;
+    max-width: 240px;
+    margin: 15px auto;
+    padding: 8px;
+    background: rgba(60,0,90,0.25);
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 6px #7a00ff;
+    font-size: 13px;
+}
+
+.feedback-section h3{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.feedback-section textarea{
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+    padding: 5px;
+    resize: none;
+    margin-bottom: 6px;
+    font-size: 12px;
+    background: #24003a;
+    color: white;
+}
+
+.feedback-section button{
+    padding: 5px 10px;
+    font-size: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #9d5bff;
+    color: white;
+    cursor: pointer;
+}
+
+#thankYouMessage{
+    font-size: 12px;
+    margin-top: 4px;
+    color: #00ffae;
+}
